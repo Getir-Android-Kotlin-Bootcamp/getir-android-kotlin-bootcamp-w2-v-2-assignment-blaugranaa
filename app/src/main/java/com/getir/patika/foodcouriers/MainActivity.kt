@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_account)
-        tabLayout = findViewById(R.id.tab_account)
+        setContentView(R.layout.fragment_maps)
+      /*  tabLayout = findViewById(R.id.tab_account)
         viewPager2 = findViewById(R.id.viewpager_account)
         pagerAdapter = PagerAdapter(supportFragmentManager,lifecycle).apply {
             addFragment(CreateAccountFragment())
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                  }
              }
 
-        }.attach()
+        }.attach() */
 
     }
 }
