@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         val fragment = MapsFragment()
 
-        // Fragmentı açma
+
         supportFragmentManager.beginTransaction().replace(R.id.map, fragment).commit()
     }
 }
