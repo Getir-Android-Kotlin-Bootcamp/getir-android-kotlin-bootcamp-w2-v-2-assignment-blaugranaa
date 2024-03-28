@@ -24,6 +24,5 @@ class MainActivity : AppCompatActivity() {
                     listOf(Place.Field.LAT_LNG, Place.Field.NAME)
                 )
         }
-
     }
 }
