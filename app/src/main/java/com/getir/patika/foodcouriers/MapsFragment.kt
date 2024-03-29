@@ -28,7 +28,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
     private var locationPermissionGranted: Boolean = false
     private lateinit var locationTextView: TextView
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -66,6 +65,10 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
         }
     }
 
+    fun moveCameraToLocation(latLng: LatLng) {
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, DEFAULT_ZOOM))
+    }
+
     private fun getMapLocation() {
         val mapFragment =
             childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
@@ -84,14 +87,13 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
                             CameraUpdateFactory.newLatLngZoom(currentLatLng, DEFAULT_ZOOM)
                         )
 
-
+                        // Mevcut konumu yazdır
                         val geocoder = Geocoder(requireContext(), Locale.getDefault())
                         val addresses = geocoder.getFromLocation(location.latitude, location.longitude, 1)
                         val address = addresses?.getOrNull(0)?.getAddressLine(0)
                         if (address != null) {
-                            locationTextView.text = "Current Address: $address"
+                            locationTextView.text = " $address"
                             locationTextView.visibility = View.VISIBLE
-                            locationTextView.elevation = 10.0f
                         } else {
                             // Handle case where address is null or empty
                             // You can show a message to the user or take other action
