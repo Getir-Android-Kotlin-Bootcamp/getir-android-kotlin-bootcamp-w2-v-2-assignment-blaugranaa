@@ -1,11 +1,13 @@
 In this project, a map page was created using Google Maps API. The map page is created as a fragment and called through the main activity.
 
-![Ekran görüntüsü 2024-03-29 225353](https://github.com/Getir-Android-Kotlin-Bootcamp/getir-android-kotlin-bootcamp-w2-v-2-assignment-blaugranaa/assets/24704582/4af1c84d-fcf0-4873-9662-3b439d1df563)
+![1](https://github.com/Getir-Android-Kotlin-Bootcamp/getir-android-kotlin-bootcamp-w2-v-2-assignment-blaugranaa/assets/24704582/3fbb40d8-1c46-484c-ac63-9b3d7f479822)
+
 
 
 When we first open the application, the application asks us for permission to access location.
 
-![1](https://github.com/Getir-Android-Kotlin-Bootcamp/getir-android-kotlin-bootcamp-w2-v-2-assignment-blaugranaa/assets/24704582/3fbb40d8-1c46-484c-ac63-9b3d7f479822)
+![Ekran görüntüsü 2024-03-29 225353](https://github.com/Getir-Android-Kotlin-Bootcamp/getir-android-kotlin-bootcamp-w2-v-2-assignment-blaugranaa/assets/24704582/4af1c84d-fcf0-4873-9662-3b439d1df563)
+
 
 
 
