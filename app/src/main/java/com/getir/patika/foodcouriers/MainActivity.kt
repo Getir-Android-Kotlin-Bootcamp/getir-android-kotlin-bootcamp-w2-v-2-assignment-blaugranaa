@@ -18,9 +18,10 @@ class MainActivity : AppCompatActivity() {
         val fragment = MapsFragment()
         supportFragmentManager.beginTransaction().replace(R.id.map, fragment).commit()
         if(!Places.isInitialized()) {
-            Places.initialize(applicationContext, "AIzaSyBEkN8FBe4Ji7iWQgJ4WDyTocgVVe0XgL8")
+            Places.initialize(applicationContext, "AIzaSyCaQfgz_dbGg5GpbVNCEHWy6G9ftWQLjpw")
             val autocompleteSupportFragment =
-                (supportFragmentManager.findFragmentById(R.id.place_autocomplete) as AutocompleteSupportFragment).setPlaceFields(
+                (supportFragmentManager.findFragmentById(R.id.place_autocomplete)
+                        as AutocompleteSupportFragment).setPlaceFields(
                     listOf(Place.Field.LAT_LNG, Place.Field.NAME)
                 )
         }
