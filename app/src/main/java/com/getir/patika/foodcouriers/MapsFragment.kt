@@ -38,7 +38,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        locationTextView = view.findViewById<TextView>(R.id.adressText)
+        locationTextView = view.findViewById<TextView>(R.id.addressText)
 
         // Initialize fused location client
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext())
