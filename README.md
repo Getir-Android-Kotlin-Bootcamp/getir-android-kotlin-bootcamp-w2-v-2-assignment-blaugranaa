@@ -18,6 +18,7 @@ There is a search bar integrated with Google Places at the top of the map.
 
 
 When we press on any address, a toast message appears showing the address we selected. There is a camera code that allows us to go to the location we choose, but sometimes it works and sometimes it does not. Also due to communication problems between fragment and activity.
+
 ![toastmsg](https://github.com/Getir-Android-Kotlin-Bootcamp/getir-android-kotlin-bootcamp-w2-v-2-assignment-blaugranaa/assets/24704582/563991a5-d95b-4a8b-8a51-645ce530831e)
 
 
