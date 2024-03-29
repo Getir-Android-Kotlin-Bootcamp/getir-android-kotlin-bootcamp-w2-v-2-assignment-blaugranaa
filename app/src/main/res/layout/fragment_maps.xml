@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:background="#008717CD"
+    android:backgroundTint="#008C0B0B"
     tools:context=".MapsFragment">
 
     <fragment
@@ -11,49 +13,105 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         tools:context=".MapsFragment" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="10dp"
-        app:cardCornerRadius="10dp"
-        app:cardBackgroundColor="@color/white">
+        android:layout_height="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/white"
+        android:alpha="0.6"
+
+        app:cardCornerRadius="10dp">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/searchbg"
-            android:scaleType="fitCenter"/>
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/place_autocomplete"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/searchbg" />
 
     </androidx.cardview.widget.CardView>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/searchPlace"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_gravity="bottom|center_horizontal"
-        android:text="Submit" />
 
     <TextView
         android:id="@+id/dummyText"
         android:layout_width="398dp"
         android:layout_height="468dp" />
 
+
+    <View
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="181dp"
+        android:layout_gravity="bottom"
+        android:alpha="0.6"
+        android:background="@drawable/frame" />
+
+    <Button
+        android:id="@+id/setlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/buttonshape"
+        android:text="Set Location"
+        app:backgroundTint="#C82C2C" />
+
     <TextView
         android:id="@+id/addressText"
-        android:layout_width="359dp"
-        android:layout_height="115dp"
+        android:layout_width="272dp"
+        android:layout_height="41dp"
         android:layout_gravity="bottom|center_horizontal"
-        android:textSize="22dp" />
+        android:layout_marginBottom="100dp"
+        android:fontWeight="700"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="30dp"
+
+        android:src="@drawable/notiicon" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginBottom="100dp"
+
+        android:src="@drawable/locationicon" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+
+
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/group" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/place_autocomplete"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp" />
+
 
 </FrameLayout>
